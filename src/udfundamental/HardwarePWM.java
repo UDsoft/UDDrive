@@ -5,10 +5,28 @@
  */
 package udfundamental;
 
+import com.pi4j.io.gpio.GpioController;
+import com.pi4j.io.gpio.GpioPinPwmOutput;
+import com.pi4j.io.gpio.Pin;
+
 /**
  *
  * @author darwin
  */
 public class HardwarePWM {
     
+    private final GpioPinPwmOutput pwm;
+            
+    public HardwarePWM(GpioController gpio, Pin pin) {
+        this.pwm = gpio.provisionPwmOutputPin(pin); 
+    }
+    
+    private void valueSetting(int value){
+        pwm.setPwm(value);
+    }
+    
+    public void setPwmValue(int value){
+        valueSetting(value);
+    }
+
 }
