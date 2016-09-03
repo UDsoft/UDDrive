@@ -98,13 +98,13 @@ public class MainDataAnalyser {
      * @return String of speed
      */
     
-    private String getSpeed(){
-        String temp = currentArrayData[speedPosition];
+    public String getSpeed(){
+        String temp = currentArrayData[speedPosition].trim();
         return  temp;
     }
     
-        private String getSteering(){
-        String temp = currentArrayData[steeringPosition];
+        public String getSteering(){
+        String temp = currentArrayData[steeringPosition].trim();
         return  temp;
     }
     

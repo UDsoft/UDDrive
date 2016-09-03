@@ -83,6 +83,7 @@ public class SpeedManager implements Runnable{
         System.out.println("Brake active by ID " + ID + " at " + dateTime.getTimeFormated());
 
         inStatic = true;
+        isMovingForward = false;
         /**
          * forward and backward is set to zero so that the the previous PWM
          * value is not stored in the respective pin. IF this is not taken care
