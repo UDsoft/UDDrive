@@ -47,8 +47,8 @@ public class UDmqtt implements MqttCallback {
          */
         String topic = "/control/speedSteering/value";
         int qos = 2;
-        String broker = "tcp://192.168.1.103:1883";
-        String clientId = "Test1";
+        String broker = "tcp://192.168.1.130:1883";
+        String clientId = "Youtube1Test";
         MemoryPersistence persistance = new MemoryPersistence();
         /**********************************************************************/
         
